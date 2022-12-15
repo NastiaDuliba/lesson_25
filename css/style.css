@@ -57,11 +57,11 @@ body {
 }
 @keyframes btn {
   0% {
-    scale: 1;
+    scale: (1);
   }
 
   100% {
-    scale: 1.7;
+    scale: (1.7);
   }
 }
 .counter {
