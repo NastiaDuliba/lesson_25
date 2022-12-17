@@ -32,8 +32,8 @@ body {
 }
 .form__input {
   display: none;
-  min-width: 500px;
-  padding: 10px 20px;
+  width: 500px;
+  padding: 10px 50px 10px 20px;
   border-radius: 20px;
   background: none;
   border-bottom: 2px solid #4e0808;
@@ -41,6 +41,7 @@ body {
   line-height: 1.5;
   letter-spacing: 2px;
 }
+
 ._active .form__input {
   display: block;
 }
@@ -52,6 +53,7 @@ body {
   height: 18px;
   right: 20px;
   top: 10px;
+  
 
   animation: btn 1s linear infinite alternate-reverse 0s;
 }
@@ -61,7 +63,7 @@ body {
   }
 
   100% {
-     transform: scale(1.7);
+    transform: scale(1.7);
   }
 }
 .counter {
@@ -72,4 +74,14 @@ body {
   padding: 20px;
   font-size: 20px;
   color: #fff;
+}
+@media (max-width: 542px) {
+  .form__input {
+    max-width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .form__input {
+    max-width: 250px;
+  }
 }
